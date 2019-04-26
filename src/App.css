@@ -3,8 +3,68 @@
 }
 
 .drum-pad {
-  background-color: wheat;
+  background-color: lightblue;
   height: 100px;
   width: 100px;
-  border: 2px solid red;
+  border: 2px solid darkblue;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: darkblue;
+  box-shadow: 2px 2px 2px darkblue;
 }
+
+.drum-pad:hover {
+  cursor: pointer;
+  box-shadow: 7px 7px 2px darkblue;
+}
+
+.drum-pad:focus {
+  background-color: green;
+}
+
+.inner-container {
+  font-size: 30px;
+}
+
+.pad-array {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  justify-items: center;
+}
+
+@media(min-width: 500px) {
+  .pad-array {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+
+  .drum-pad {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media(min-width: 768px) {
+  .pad-array {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+  }
+
+  .drum-pad {
+    width: 200px;
+    height: 200px;
+    font-size: 50px;
+  }
+}
+
+
+
+
+
+
+
+
+
